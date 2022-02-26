@@ -1,0 +1,11 @@
+*.out
+*.out.dSYM
+*.tmp
+__pycache*
+*.o
+*.exe
+*.swp
+build/
+compile_commands.json
+*cache
+*Testing

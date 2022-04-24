@@ -28,7 +28,7 @@ double Phase_Functions::ihg(double g, double rn) {
 double Phase_Functions::rlgh(double mu) {
     if (std::abs(mu) > 1.) {
         throw std::domain_error(std::string("abs(mu) must be below \
-            1 with the Raleigh function"));
+            1 with the Rayleigh function"));
     }
     return 0.75*(1.0 + pow(mu, 2.0));
 }
@@ -36,7 +36,7 @@ double Phase_Functions::rlgh(double mu) {
 double Phase_Functions::irlgh(double rn) {
     if (std::abs(rn) > 1.) {
         throw std::domain_error(std::string("abs(rn) must be below \
-            1 with the Raleigh function"));
+            1 with the Rayleigh function"));
     }
     double q = 4.0*rn-2.0;
     double u = pow(-q + pow(1 + pow(q, 2.0), 0.5), 1.0/3.0);
